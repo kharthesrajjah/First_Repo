@@ -1,0 +1,1555 @@
+keywords:
+ keywords are the reserved words which has a pre-defined meaning.
+ 52 keywords
+ 1.class keyword
+ it is used to represent the java program
+
+identifiers:
+ identifiers are the names given by the programer to identify the java program or the elements in the java program.
+ 'examples:'
+ classname
+ variable name
+ method name
+
+ rules for identifiers
+ 1)identifiers should start with alphabet or _ or $.
+ 2)the special characters are allowed in identifiers are _ and $.
+ 3)space not allowed in between identifiers
+ 4)keywords cannot be used as identifiers
+
+variables :
+ ->variables -  in programming world variables are the memory devices
+
+ ->data - any piece of information can be considered as a data
+
+ size of data - data is calculated in terms of byte
+ 1 byte = 8 bits
+ 0 and 1 are bits  
+
+types of data:
+ 1)collection of characters(alphanumeric + special)
+ 'example'
+ name=kharthes;
+ email=kharthesg@gmail.com;
+
+
+ 2)numeric data without decimal points
+ 'examples'
+ classes=50;
+ present=46;
+
+ 3)numeric data with decimal points
+ 'example'
+ percentage=67.43;
+
+ 4)single character data
+ 'example'
+ course=d;
+ gender=m;
+
+ 5)yes or no type of data
+ 'example'
+ paid=yes;
+ interested=yes;
+
+datatypes:
+ datatype is used to represent the type of variable and size of variable.there are two datatypes in java
+
+ 1)primitive datatype
+ it is used to store values.
+ 2)non primitive datatype
+ it is used to store the address of the object.
+
+ PRIMITIVE DATATYPE
+ there are eight primitive datatypes avaiable in java
+ 1)byte		1 byte		8 bits                 
+	NOTE:8 BITS-->_0_0_0_0_0_0_0_0_ WHERE THE FIRST BIT 0 REPRESENT THE VALUE IS POSITIVE(0).IF 1 IS PRESENT IN THE BEGINIG OF THE BIT IT REPRESENTS NEGATIVE(1) VALUE. 
+ 2)short		2 byte		16bits
+ 3)int 		  	4 byte		32bits
+ 4)long			8 byte		64bits
+ 5)float		4 byte		32bits
+ 6)double		8 byte		64bits
+ 7)char 		2 byte		16bits
+ 8)boolean		undefined	(true/false)
+
+ formula to caculate minimum and maximum value which we can store in byte, short, int, long
+
+ min = -2 power (n-1)
+
+ max= + 2 power (n-1) - 1
+
+ n => no of bits
+
+ 1)byte 1 byte 8 bits
+ min= - 2 power (8-1) = -2 power 7 = -128
+ max= + 2 power (8-1) - 1 = 128-1= +127
+ the range of values we can store in byte is-128 to +127
+
+ 2) short 2 byte 16 bits
+ min = - 2 power (16-1) = -2 power 15 = -32768 
+ max= + 2 power (16-1) 1 = 32768-1 =+32767
+ the range of values we can store in short is -32768 to +32767
+
+ 3) int 4 byte 32 bits
+ min = - 2 power (32-1) = -2 power 31 = -2147483648 
+ max= + 2 power (32-1)-1=2147483648-1 =+2147483647 
+ the range of values we can store in int is -2147483648 to +2147483647
+
+ 7) char datatype
+ single character data should be represented within single quotes
+
+ the character which we are storing will be internally represneted as unicode integer and that uniocde integer will be converted to binary
+
+ important unicodes to remember
+ 1) upper case alphabets 
+ 'A' to 'Z' ==> 65 to 90
+ 2)lower case alphabets 
+ 'a' to 'z' => 97 to 122
+ 3)number characters
+ '0' to '9' ==>48 to 57
+
+ 8) boolean undefined(size is undefined)
+
+ true / false
+ true is represented using 1 internally
+ flase is represented using 0 internally
+
+ data is of 1 bit
+
+ 9)collection of characters(alphanumeric + special)
+ 'example'
+ name=kharthes;
+ email=kharthesg@gmail.com;
+ =>In java to store collection of characters we hava a non primitive datatype called String
+ =>the collection of characters which needs to stored should be represented within " "(double quotes)
+
+Variables:
+ varaible is named memory location which is used to store value.
+
+ sytax of a variable
+ 1)decleration of a variable
+ datatype variablename;
+
+ 2)initilization of a variable
+ variablename=value;
+
+ 3)utilization of a variable
+ use variablename;
+
+ 4)reinitialization of a variable
+ variablename=valu;
+
+ Note:
+ =>changing the value of existing value is called as reinitialization.
+ =>while performing reinitilization we should not mention the datatype again.
+
+ Final keyword:
+ the variable declared with final keyword cannot be reinitialized. 
+
+Operators:
+ + operator
+ this + operator behaves in two different ways
+ 1)arithmetic operator
+ num + num = sum
+ 2)concatination operator
+ "" + num
+ num + ""
+ "" + ""
+
+ 12+34+"56"
+ 46+"56"
+ "4656"
+
+ "12"+34+56
+ "1234"+56
+ "123456"
+
+ join fist operand with second operand without any space.
+
+ types of operators
+ 1)based on number of operands
+ ==>unary operator
+ ==>binary operator
+
+ 2)based on operation
+ ==>increment and decrement
+ ==>arithmetic
+ ==>logical 
+ ==>relational
+ ==>assigment
+
+ ==>increment and decrement operator
+ increment (++)
+ it is used to perform addition by 1 and store the answer in the same variable
+
+ there are two types of increment operator
+ 1) pre increment operator (++var)
+ in the case of pre increment operator the value of the variable will be first incremented by 1 and the incremented value  will be substituded in the given expression.
+
+ 2) post increment operator (var++)
+ in the case of post increment operator the old value of the variable will be subsituited in the given epression after substituting the old value, the value in the variable will be incremented by 1. 
+
+ notes
+ -|increment and decrement operator works on all primitive datatypes except boolean.
+ -|we cannot use increment and decrement operator on final variables.
+ -|increment and decrement operator works on variables.
+
+ ==>arithmetic operator
+ +,-,*,/,%
+ ->result datatype is decided based on below formual
+ bigger of (int,datatype of op1, datatype of op2)
+
+ ==>relational operator
+ >,>=,<,<=,!=,==
+ the answer of relational operator will always be boolean.
+ ==>logical operator
+ !(not), &&(AND), ||(OR)
+ the input  and output of logical operators are boolean
+
+ !(not)
+ it is a negation operator
+
+ input1	input2	&&(AND)	||(OR)
+ true	true	true	true
+ true	false	false	true
+ false	true	false	true
+ false	false	false	false
+
+ note:
+ -|in the case of AND operator if any one operand is false output is false.
+ -|in the case of OR opreator if any operand is true output is true.
+
+ ==>assigment operator
+ =
+ assign RHS value to LHS variable
+ int a=43;
+ 43 is assigned to variable a
+
+ +=,-=,*=,/=.%=	
+
+flow control statements
+ 1)conditional statements
+ if,if else,if else ladder,nested if,switch case
+
+ 2)loopig statements
+ for,while,do while,for each loop
+
+ 1)conditional statements
+ =>if statement
+   syntax of if
+   if(boolean exp)
+   {
+   //task to execute
+   }
+   working:
+   check the boolean expression
+   ->if the boolean exp is true execute the task inside {}.
+   ->if the boolean exp is false skip the task inside {}.
+
+  =>if else statement
+      syntax of if else
+    if(boolean exp)
+    {
+    //task to execute
+    }
+    else
+    {
+    //task to execute
+    }
+    working:
+    check the boolean expression
+    ->if the boolean exp is true execute the task inside if{}.
+    ->if the boolean exp is false execute the task inside else{}.
+
+  =>if else ladder statement
+      syntax of if else ladder
+    if(boolean exp)
+    {
+    //task to execute
+    }
+    else if(boolean exp)
+    {
+    //task to execute
+    }
+    else if(boolean exp)
+    {
+    //task to execute
+    }
+    else if(boolean exp)
+    {
+    //task to execute
+    }
+    else
+    {
+    //task to execute
+    }
+
+  =>nested if statement
+   syntax of nested if 
+   if(boolean exp)
+   {
+   		if(boolean exp)
+   		{
+   		//task to execute
+   		}
+   		else
+   		{
+   		//task to execute
+   		}
+   }
+   else
+   {
+   //task to execute
+   }  
+
+ 2)Looping statements
+  ==>for loop
+  syntax
+  for(initialization;boolean exp;update)
+  {
+  //task to execute
+  }
+
+  working 
+  ->initislization if variable
+  ->check the condition
+
+  if condition true
+  --execute the task inside{}
+  --perform update
+  --again check the condition and repeat
+
+  if condition false
+  --stop the execution of loop
+
+  Break keyword:
+  -->Break keyword is used to terminate the looping statements.
+
+  Continue keyword:
+  -->Continue keyword is used to stop the current itteration and continue with the next itteration. 
+
+ ==>nested for loop
+   syntax
+   for(initialization;boolean exp;update)
+   {
+   for(initialization;boolean exp;update)
+   {
+   //task to execute...
+   }
+   }
+ 
+ ==>While loop
+  syntax
+  while(boolean exp)
+  {
+  //task to repeat
+  }
+
+  working
+  -->check the boolean exp
+  -->if the boolean exp is true
+  -->execute the task
+  -->after executing the task again check condition
+  -->if false stop.
+
+ ==>do While loop
+  syntax
+  do
+  {
+  //task to repeat
+  }while(boolean exp);
+
+  working:
+  -->do the task
+  -->and check the condition
+  -->if condition true and repeat
+  -->if condition is false stop
+
+Methods:
+  -The method in java is a collection of statements that perform some specific task and return the result to the caller.
+  -A java method can perform some specific task without returning anything.
+  -Java methods allow us to reuse the code without retyping the code.
+
+  1)Method Decleration
+  2)Method Definition
+  access	 access		retuen	method	(arguments)	 
+  specifier  modifier	type 	name
+  {
+  //task
+  }
+
+  Note:
+  ->the method should be declared wihin the class.
+  ->method inside a method is illegal.
+  ->the method decleard in the class will be executed only if its called.
+  ->we can call the method any number of times.
+  ->within the class we can decleare any number of methods and we call the methods in any order.
+  ->any programmer written method can call another programmer written method.
+
+
+  input arguments for method
+  ->if the called method wants to receive any data from the calling method we need to make use of input arguments.
+  ->input arguments for a method is optional.
+  ->a method can any number od arguments depending upon requirement
+  ->while calling a method with input arguments it is mandatory to pass the values in the same sequence in which they are decleared.
+
+  Return type of a method
+  -->if the called method wants to return any value to the calling method then we have to use the return type.
+  -->there are 2 types of return type
+  1)void
+  	if the called method does not want to return any value to the calling method then we have to use the return type as void.
+
+  2)datatype
+  	if called method wants to return any value to the calling method then we have to mention the datatype of the value which needs to be return.
+
+  Note:
+  ->a method can have only 1 return type and we can return 1 value.
+  ->return statement should be the last executable statement inside the method.
+
+  Recursion:
+  -->a method calling itself is called as Recursion.
+  -->Recursion leads to runtime exception called stack over flow error.
+
+Question-1
+ can we write a java program and compile it without main method?
+ 	ans:yes possible but we cannot execute.
+
+Question-2
+ can we write more than 1 class in a single file?
+ 	ans:yes possible, java compiler will complie all the progrms at once and seperates each program into different .class and we have to execute each .class file seperately.
+
+
+Object oriented programming
+  1)members of class
+  -->the things which can be decleared within the scope of the class are called as members of class.
+
+   class classname
+   {
+
+   //members of class
+   1)data member ==> variable
+   2)member function ==> methods
+   3)constructor
+   4)blocks
+   5)inner class
+
+   }
+
+  Types of members:
+  every member of the class except constructor can be classified in 2 ways
+  
+  1)static member
+   the member declared with static keyword.
+   	=>single copy common for everyone
+
+  2)non static member
+   the members declared without static keyword is called as non static member.
+   	=>seperate copy seperate for everyone
+
+  access members of class
+   1)access static members of same class
+   2)access non static members of same class
+   3)access static members of different class
+   4)access non static members of different class 	
+
+  Note:
+  ->.(dot) operator.
+  ->. operator helps us to access members present in different memory location.
+  ->if access is not restricted using access specifier
+
+ 1)access static members of same class
+  call directly with help of name
+
+ 3)access static members of different class
+  class.membername
+ 
+ 2)&4)access non static members of same class and different class
+  -->to access non static members it is mandatory to create an object.
+  -->to create an object we have to use new operator.
+
+ syntax of object creation
+ ==>> new classname()
+
+ new operator performs the following two operations:
+ 1)create an object (create a memory)
+ 2)create a seperate copy of every non static member of the class inside object. 
+
+ syntax to access non static members
+ ==>> new classname().membernam;
+
+ Reference variable
+ syntax
+ ==>> classname referencevariable name = new classname();
+
+ Note:
+ ->reference variable will store the address of the object.
+ ->Reference variable is a non primitive variable which is used to store the address of the object.
+
+
+Object
+  any existing entity which can be seen and touched is called Object.
+
+ Every Object has 2 properties
+  1)state (what object has) ==>data member
+  2)behaviour (what object dose) ==> member function
+ 
+ Class
+  it is a logically existing entity which discribes states and behaviour.
+
+ Object
+  ->Object is a physically existing entity which has states and behaviour.
+  ->non static data members represents the state of the object and non static member function represents the behaviour of the object. 
+ 
+ java terminologies			Object oriented terminologies
+  instance	--------------> object
+  class members	---------->	static members
+  instance members	------>	non static members
+
+ Types of variables
+  1)based on datatypes
+   	==>primitive
+   	==>non primitive  
+  
+  2)based on type of member
+  	==>static 
+  	==>non static
+  
+  3)based on members
+  	==>global (variables decleared inside class)
+  	==>local (variables decleared inside method or constructor or blocks)
+
+  	NOTE:
+  	->local variables cannot be classified as static or non static.
+  	->local variables cannot be accessed outside method.
+
+JVM Artitecture
+ -->The first line JVM will execute is a java classname given at the command prompt.
+ -->When this line of code is executed JVM internally divides the memory into four parts:
+ 1)stack
+ 2)heap
+ 3)static pool area
+ 4)method area
+
+ Java classname
+  -->In the above line JVM will internally call class loader, the class loader will load th .class file into memory.
+  -->After loading .class file into memory, it will load all the static members of the class into static pool area initialization of data members will be completed.
+  -->now after the above  procedure, JVM will internally call main method loaded in the  static pool area and binds with the method area and gets it top of stack.
+  -->Execution of the program start from the first line of main method...
+
+  NOTE:
+  ->if we are accessing any member directly without .Operator then JVM search for that member in the same static pool area where the main method is loaded.
+  ->when we call any method in java JVM will take the declaration and binds with the definition and get it to the stack on top of calling method.
+  ->after finishing execution of the method when it finds return statements or } then method will be automatically removed from the stack.
+  ->at the end of main method JVM will call the class loader again, now the class loader will clean the static pool area and the method definition in the static pool area.
+  ->at the end of main method JVM  will call garbage collector,the garbage collector will destory the object in the heap and the method definitions in method area.
+
+ 1)Stack
+  stack is the execution area
+  -->when ever we call a method the called method will be loaded and executed in the stack.
+  -->after execution it will removed from the stack.
+  -->the called method will come on top of calling method in the stack.
+  -->main method is the firs method which enters the stack.
+
+ 2)Heap
+ -->heap memory is reserved for java object
+ 	->inside java object non static data members and non static method declaration will be stored
+ 	->garbage collector destorys the objects after the execution of main method..
+
+ 3)Static pool area
+  -->static pool is reserved for static members of class 
+  -->a separate  pool will be created for every class loaded by classloader
+  -->inside that separate pool static data members and static method declaration will be stored.
+  -->only once static members will be loaded in static pool area.
+
+ 4)Method area
+  -->method area will store method definition of static and non static methods.
+
+  Note:
+  ->a single object can have any number of reference variables.
+  ->1 reference variable can refer only 1 object at a time.
+  ->if there is any object existing in heap memory without reference variable those objects are called derefernced objects.
+  ->the derefernced objects will be destroyed by the grabage collector even before main method is completed.
+  ->we can access static members using reference variable but it is recommended not to use this approch.
+  ->Local variables are stored in Stack memory.
+
+Constructor
+ Constructor is a special member of the class which is used to initialize non static data members of the class. 
+ Structure of the Constructor:
+  	access_specifier	classname(arguments)
+  	{
+  	//initializaton non static data members
+  	}
+
+ Features of Constructor
+ -->Constructor name should be same name as classname.
+ -->Constructor is similar to method without returntype.
+ -->Programmer cannot call a Constructor, the new operator will implicitly call the Constructor at the time of Object creation. 
+
+ Types of Constructor
+  there are 2 types of Constructor
+  1)Default Constructor
+  2)Programer defined Constructor
+
+   1)Default Constructor
+    If the programmer has not written any Constructor within the class, then the java compiler will implicitly write one zero argument Constructor which is called Default Constructor.
+
+   2)Programer defined Constructor
+    there are 2 types of Programer defined Constructor
+    1)Constructor without arguments ==> arguments constructor
+    2)Constructor with arguments==>parameterized constructor
+
+  Note: 
+  1)within a single class we cannot have both Default constructor and Programer defined constructor.
+  2)All Default constructor are zero arguments.
+  3)But, All zero arguments constructor are not Default constructor.
+
+ This Keyword:
+  -->This keyword will be holding current class Object address.
+  -->This keyword is use to differentiate local variables and global variables having same name.   
+  
+ Constructor Overloading
+  Defining multiple constructors within the class having same name and it should differ in arguments either by size or type or position is called as Constructor Overloading.
+
+ This Statement ==> this()
+  This Statement is used to call another constructor present in the same class.
+
+  Rules for This Statement:
+   1)This Statement should be the first statement within the constructor body.
+   2)we can write only one This Statement within a single constructor.
+   3)Constructor Recursion is not allowed.
+
+
+UML Diagram
+
+   _________________________________________________
+  |						classname					|
+  |-------------------------------------------------|
+  |													|
+  |					variablename:datatypes			|
+  |     											|
+  |			methodname(arguments):returntype		|
+  |_________________________________________________|   
+
+Has a Relationship
+ One class has an object of other class as its data member.
+  example:System.out.println();
+ 
+ Program-1
+ class HardDisk -->//PrintStream
+ {
+ 	int memory =512;
+ 	void storeData() -->//println()
+ 	{
+ 		System.out.println("store the data..");
+ 	}
+ }
+ class Laptop -->//System
+ {
+ 	static String brand="hp";
+ 	int cost=25000;
+
+ 	static HardDisk disk=new HardDisk();
+ // static PrintSteam out=new PrintStream();
+
+ 	void processing()
+ 	{
+ 		System.out.println("processing");
+ 	}
+ }
+ class MainClass
+ {
+ 	public static void main(String[] args) {
+ 		HardDisk h1=new HardDisk();
+ 		h1.storeData();
+
+ 		Laptop.disk.storeData();
+ 		System.out.println();
+
+ 	}
+ }
+
+ Program-2
+ class SimCard
+ {
+    long contactnumber=2432334234l;
+    void network()
+    {
+    	System.out.println("network");
+    }
+ }
+ class Mobile
+ {
+ 	static SimCard card=new SimCard();
+
+ }
+ class MainClass1
+ {
+ 	public static void main(String[] args) {
+ 		Mobile.card.network();
+ 	}
+ }
+
+Oops concept
+ 1)Inheritance
+ 2)Polymorphism
+ 3)Abstraction
+ 4)Encapsulation
+
+1)Inheritance (IS-A Relationship)
+ One class acquring the properties of another class is called Inheritance.
+ In java we achieve inheritance using extends keyword.
+
+  Notes:
+  1)sub class
+  	->the class which acquires the properties is called sub class.
+  2)super class
+  	->the class from where we acquire the properties is called super class. 	 
+  3)sub class can aquire the properties of super class.But super class cannot acquire the propertie of sub class.
+  4)if we create the Object of sub class, the sub class object will have the properties of both super class & sub class.
+  5)we cannot inheritate each and every members present in super class.
+  6)There are certain members which cannot be inheritated:   	->static members of super class,
+  	 ->constructors of super class &
+	 ->private members of super class.
+
+ Types of Inheritance	 
+  There are 5 types of inheritance:
+   1)Single inheritance
+   2)Multi level
+   3)Multiple
+   4)Hirearchical
+   5)Hybrid
+
+  1)Single inheritance
+   -->One sub class acquiring the propertie from One super class is called as Single inheritance.
+
+  2)Multi level
+   -->One sub class acquring the propertie from One super class, that super class acquiring the propertie from its own super class and the process repeating up to many classess is called as Multi level inheritance.
+
+  3)Multiple
+   -->One class acquiring the propertie from more than super class is called as Multiple Inheritance.
+   -->we cannot acieve Multiple inheritance in java using class.
+
+  4)Hirearchical
+   Multiple sub class acquring the propertie form One common super class is called as Hireachical inheritance.
+
+  5)Hybrid
+   Combination of more than one type of inheritance is called as Hybrid inheritance.
+    
+ __________________________________________________________
+   class Ghost
+   {
+		int a=78;   
+   } 
+
+   @compilation time
+   class Ghost extends Object
+   {
+   		//1 default constructor
+   		//11 non static methods of Object class
+   }
+ __________________________________________________________  
+  Note:
+  ->If there is a class without extends keyword, then the java compiler will by default acquires the properties of inbuilt class by name Object.
+  ->Each and every class in java will implicitly have the Object class members.
+  
+
+  Constructor chaining
+   -->sub class constructor calling super class constructor and that super class constructor calling its own super class constructor and the process repeat up to Object class is called as constructor chaning.
+
+  super()==>super statement
+   super statement is used to call super class constructor from sub class constructor.
+
+  Rules for super statement  
+   1)super statement should be the first statement within the constructor body.
+   2)we can write only one super statement within a single constructor.
+   3)this statement and super statement cannot be written in a single constructor.
+
+  Two reasons why Multipe inheritance is not supported using class.
+   1)We cannot write more than one super statement within single constructor.
+   2)Diamond ambguguity problem.
+   	->the compiler gets confused to choose the path to inheritate the properties of Object class into sub class.
+
+  super keyword
+   ->super keyword is used to differentiate super class member and sub class member having same name.
+
+  Final keyword
+  final variable ==> cannot be reinitialized
+  final class  	 ==> cannot inherite
+
+  Advantages of Inheritance
+  ->code reusability.
+  ->Software extensibility.
+  ->Modification of code is easy.
+
+2)Polymorphism  
+  1)Method Overloading
+  2)Method Overriding
+  3)Typecasting
+
+  1)Method Overloading
+   Defining multiple methods within the class having same name and it should differ in arguments either by size or type or position is called as Method Overloading.
+
+   Note:
+   ->we can Overload static methods also.
+   ->we can Overload main method also.
+
+  2)Method Overriding
+   Inheritating a method from super class changing its implementation in the sub class without changing its decleration is called as Method Overriding.
+
+    Note:
+     ->Inheritance is mandatory for method overriding.
+     ->static methods cannot be overridden.
+     ->we cannot override final methods.
+
+  3)Typecasting
+    -->Converting one type of information into another type of information is called Typecasting.
+    -->there are 2 types of Typecasting:
+    	1)Primitive datatypecasting
+    	2)class typecasting    
+
+    1)Primitive datatypecasting
+      Converting one type of primitive value into another data type is called as Primitive datatypecasting.
+
+     //type mis-matching statements
+     //lhs != rhs
+     1)Narrowing
+      ->Assigning higher type value to lower datatype is called narrowing.
+      ->explicity casting is mandatory.
+
+      Example:
+      int c=2.3;
+      int type variable = double type value
+      lower type = higher type
+
+     2)Widenining
+      ->Assigning lower type value to higher datatype is called widenining.
+      ->implicit casting. 	
+
+      Example:
+      double d=12;
+      double type variable = int type value
+      higher type variable = lower type value
+
+    2)Class typecasting
+     ->Class should have IS-A relationship for Class typecasting.
+     ->There are 2 types of Class typecasting
+      1)Upcasting
+       ->Assigning the sub class object to super class type(super class reference variable) is called Upcasting.
+        example:
+         class Demo1
+         {
+
+         }
+         class Demo2 extends Deom1
+         {
+
+         }
+         class MainClass
+         {
+         	public static void main(String[] args)
+         	{
+         		Demo1 d1=new Demo2();
+         	}
+         }
+          
+          Demo1 d1=new Demo2();
+          super class ref=sub class object
+
+       ->when we upcast an object the sub class properties present in the object will be hidden and it behaves like superclass by showing only super class properties.
+
+        Note:
+        -->In java if we have an input argument as class type, While calling such methods we can pass the object of same class as well as sub class.
+        -->If we pass the object of sub class, the sub class properties present in the object will be hidden and it shows only the properties of super class.
+
+       Example:
+        class GeneralTicket
+        {
+	     	void travel()
+	     {
+		 System.out.println("travel");
+	     }
+        }
+		class ReservedTicket extends GeneralTicket
+		{
+			void seat()
+			{
+				System.out.println("travel with confirmed seat");
+			}
+			void food()
+			{
+				System.out.println("food facility");
+			}
+		}
+		class AcTicket extends ReservedTicket
+		{
+			void controlTemp()
+			{
+				System.out.println("control temperature");
+			}
+		}
+		class Train
+		{
+			void generalCompartment(GeneralTicket gt)
+			{
+				gt.travel();
+			}
+			void reservedCompartment(ReservedTicket rt)
+			{
+				rt.travel();
+				rt.seat();
+				rt.food();
+			}
+			void acCompartment(AcTicket at)
+			{
+				at.travel();
+				at.seat();
+				at.food();
+				at.controlTemp();
+			}
+		}
+		public class Program14 
+		{
+			public static void main(String[] args) 
+			{
+				Train p1=new Train();
+				p1.generalCompartment(new GeneralTicket()); 	//same class object
+				p1.generalCompartment(new ReservedTicket());	//sub class object
+				p1.generalCompartment(new AcTicket());			//sub class object
+		
+			//	p1.reservedCompartment(new GeneralTicket());	super class object
+				p1.reservedCompartment(new ReservedTicket());	//same class object
+				p1.reservedCompartment(new AcTicket());			//sub class object
+		
+			//	p1.acCompartment(new GeneralTicket());			super class object
+			//  p1.acCompartment(new ReservedTicket());			super class object
+				p1.acCompartment(new AcTicket());				//same class object
+			}
+		}
+
+
+
+      2)Downcasting
+       ->Assigning the super class object to sub class reference variable is called Downcasting.
+       ->casting statement is mandatory for Downcasting.
+        example:
+         class Demo1
+         {
+
+         }
+         class Demo2 extends Deom1
+         {
+
+         }
+         class MainClass
+         {
+         	public static void main(String[] args)
+         	{
+         		Demo2 d2=(Demo2)new Demo1();
+         	}
+         }
+
+         Demo2 d2=(Demo2) new Demo1();
+         sub class ref=super class object
+
+       ->Assigning the upcasted super class reference variable to sub class reference variable is called as Downcasting.
+
+       Note:
+       -->Only the upcasted object can be downcasted.
+       -->When we call a overridden method using upcasted reference variable we get the output of sub class implementation.
+       -->ClasscastException error is occurred at run time.
+
+       instanceof operator:
+       ->instanceof operator is used to check whether the object which is being downcasted is having relevent class properties or not.
+       ->If the properties are present it returns true, if the properties are not present it returns false.
+       ->instanceof operator helps us to avoid class cast exception.
+
+  Polymorphism:
+  	->A single object showing different behaviours at different stages of its life cycle is known as Polymorphism.
+  	->There are two types of Polymorphism:-
+  	  1)Compile time polymorphism
+  	  2)Runtime polymorphism
+
+  	1)Compile time polymorphism
+  	 ->Binding the method declaration with method definition by the compiler at Compile time based on arguments passed is known as Compile time polymorphism.
+  	 ->It is also known as static binding because, once the method declaration and definition are binded we cannot rebind them.
+  	 ->Method overloading helps us to acheive Compile time polymorphism.  
+
+  	2)Runtime polymorphism
+  	 ->Binding the method declaration with method definition by the JVM at Runtime based on object created is known as Runtime polymorphism.
+  	 ->It is also known as dynamic binding because, once the method declaration and definition are binded we can rebind them to acheive Runtime polymorphism, for that we need to satisfy the following three conditions:
+  	  -->Inheritance
+  	  -->Method overriding
+  	  -->Upcasting  
+
+
+3)Abstraction
+	1)Concrete method
+	2)Abstract method
+	3)Concrete class
+	4)Abstract class
+
+	1)Concrete method
+	 The method which has both declaration and definition is considered as Concrete method.
+	 Example:
+	  void test()
+	  {
+	  System.out.println("test method");
+	  }
+
+	2)Abstract method
+	 The method which has only declaration withuot definition is considered as Abstract method.
+	 Example:
+	  abstract void run();
+	 Rules:
+	 -->Abstract method should be declared with abstract keyword.
+	 -->Abstract method dose'nt have a body, it should end withsemicolon(;).
+	 -->Abstract method should be declared in abstract class. 
+
+	3)Concrete class
+	 The class declared without abstract keyword is considered as Concrete class.
+
+	4)Abstract class
+	 The class declared with abstract keyword is considered as Abstract class.
+	 
+	 Rule:
+	 ->We cannot create Object for Abstract class.
+
+	 Note:
+	  -->When a sub class  is acquring abstract method from an abstract class, the sub class has to satisfy one of the following 2 conditions:
+	  1)Provide the implementation for the abstract method and make it concrete. (OR)
+	  2)Declare the class as abstract.
+
+ Difference between abstract class and concrete class
+______________________________________________________________
+|        abstract class          |	 	concrete class          |
+|--------------------------------|----------------------------|
+|->class decleared with abstract | ->class decleared without  |
+|keyword.                        |  abstract keyword.         |
+|                                |                            |
+|->in abstract class, abstract   | ->The implementation is for| 
+|method should be written using  |  the abstract method is    |
+|abstract keyword and end with   |  provided in concrete      |
+|semicolon(;).                   |  class by overriding the   |
+|                                |  abstract method.          |
+|                                |                            |
+|->We cannot create Object for   |  ->We can create Object for| 
+|abstract class                  |  concrete class            |
+|________________________________|____________________________|
+
+Illegal combination of modifiers
+ ->abstract static
+ ->abstract private
+ ->abstract final
+
+Disadvantages of abstract class
+ ->We cannot acheive 100% abstraction using abstract class in order to acheive 100% abstraction we need Interface.
+
+ There are five different ways to represent a Java program
+  1)class
+  2)interface
+  3)enums
+  4)annotations
+  5)record
+
+ Interface:
+  ->Interface is a type of java program which is used to acheive 100% Abstraction.
+
+  Structure of interface:
+   interface interfacename(classname)
+   {
+    //members of interface
+    int a=34;	//static and final a=34
+
+    void run();	//public abstract void run();
+    
+    =>Data members->static and final
+    =>member functions->public and abstract
+   }
+
+  Note:
+   1)The data members inside interface are by default static and final.
+   2)The method inside interface are public and abstract.
+   3)No constructors are allowed inside interface. 
+   4)A class can acquire the properties of an interface with the help of implements keyword.
+   5)The class which is implementing the interface is also called as implementation class. 
+   6)Interface will not acquire from Object class.
+
+  MULTIPLE INHERITANCE:
+    interface Demo1
+   {
+	double b=2.3;
+	void test();
+   }
+	class Demo2 implements Demo1
+	{
+	public void test()
+		{
+		System.out.println("test");
+		}
+	}
+	class Program2
+	{
+		public static void main(String[] args) {
+		Demo2 d2=new Demo2();
+		System.out.println(d2.b);
+		d2.test();
+		}
+	}
+
+  HYBRID INHERITANCE
+   interface Demo1
+	{
+	void run();
+	void task();
+	}
+	abstract class Demo2 implements Demo1
+	{
+		public void run()
+		{
+		System.out.println("run");
+		}
+	}
+	class Demo3 extends Demo2
+	{
+		public void task()
+		{
+		System.out.println("task");
+		}
+	}
+	class Program2
+	{
+		public static void main(String[] args) 
+		{
+		Demo3 d3=new Demo3();
+		d3.run();
+		d3.task();
+		}
+	}
+
+   7)If there is any class which is implementing an interface but not acquring the properties from any other class will acquire the properties from Object class. 
+   8)In java an interface can acquire the propertie of another interface with the help of extends keyword.   
+   9)One class can implement any number of interfaces.
+   10)One class can extend another class as well as implement any number of interfaces.
+     Example:
+
+     interface Version1
+	{
+		void run();
+	}
+	interface Version2
+	{
+		void task();
+	}
+	class Version3
+	{
+		public  void talk()
+		{
+			System.out.println("talk method..");
+		}
+	}
+	class Program2 extends Version3 implements Version1,Version2
+	{
+		public void run()
+		{
+			System.out.println("run meethod");
+		}
+		public void task()
+		{
+			System.out.println("task method ");
+		}
+
+		public static void main(String[] args) 
+		{
+			Version3 v3=new Version3();
+			v3.talk();
+			new Program2().task();
+			new Program2().run();
+		}
+	}
+
+     
+
+
+
+ Abstraction:
+   Hiding the implementation of the Object and showing only the features of the Object is called as Abstraction.
+
+    Steps to acheive Abstraction
+    1)Generalized the common properties of the classes and store it in an interface.
+    2)Provide the implementation for the abstract methods present in the interface in the implementation class.
+    3)Create the Object of implementation class and store it in the interface refernce variable.
+    4)Access the properties of implementation class using interface reference variable.
+
+      example:
+       interface Zomato
+		{
+			void menu();
+			void order();
+			void delivery();
+		}
+		class Mcdonald implements Zomato
+		{
+			public void menu()
+			{
+				System.out.println("welcome to mcdonalds....");
+				System.out.println("french fries,burger,deserts...");
+			}
+			public void order()
+			{
+				System.out.println("accept the order from customer");
+				System.out.println("pass the order to Mcdonald chef");
+				System.out.println("Mcdonald chef prepares the order using mcdonalds recipe");
+			}
+			public void delivery()
+			{
+			System.out.println("deliver the order from mcdonals kitchen to customer");
+			}
+		}
+		class Dominos implements Zomato
+		{
+			public void menu()
+			{
+				System.out.println("welcome to Dominos....");
+				System.out.println("pizza,deserts...");
+			}
+			public void order()
+			{
+				System.out.println("accept the order from customer");
+				System.out.println("pass the order to Dominos chef");
+				System.out.println("Dominos chef prepares the order using Dominos recipe");
+			}
+			public void delivery()
+			{
+				System.out.println("deliver the order from Dominos kitchen to customer");
+			}
+		}
+		class A2B implements Zomato
+		{
+			public void menu()
+			{
+				System.out.println("welcome to A2B....");
+				System.out.println("idely,vada,sambar,...");
+			}
+			public void order()
+			{
+				System.out.println("accept the order from customer");
+				System.out.println("pass the order to A2B chef");
+				System.out.println("A2B chef prepares the order using A2B recipe");
+			}
+			public void delivery()
+			{
+				System.out.println("deliver the order from A2B kitchen to customer");
+			}
+		}
+		class ZomatoApp
+		{
+			public Zomato selectRestaurent(char choice)
+			{
+				if(choice=='M')
+					return new Mcdonald();
+				else if(choice=='D')
+					return new Dominos();
+				else
+					return new A2B();
+			}
+		} 
+		class Program2
+		{
+			public static void main(String[] args) 
+			{
+				ZomatoApp app=new ZomatoApp();
+				Zomato ref= app.selectRestaurent('a');
+				ref.menu();
+				ref.order();
+				ref.delivery();
+			}
+		}
+
+     Advantages of Abstraction:
+    ->we can acheive loose coupling.
+    ->it hepls us to develop Api.
+
+
+4)Encapsulation
+ 1)eclipse instalation
+ 2)access specifiers
+ 3)encapsulation definition
+ 4)java bean class
+ 5)singleton design pattern
+
+  Package: 
+  ->Collection of java programs according to their dedicated functionality is called Package.
+  ->Package decleration should be the first line within the java program.
+
+  syntax for package:
+   package packagename;
+
+  According to java convenction it is recommended to write the packagename in the reverse of website name.
+   example:
+    www.facebook.com 
+      packagename will be-->   com.facebook.homepage
+
+ 2)access specifiers
+  	note:
+	 ->In order to use the class in a different package, we have to import the class.
+	 =>import fully qualified classname >> import packagename.classname.
+
+	1)public access specifier:
+	 ->public members are visible wthin the class, outside the class as well as outside the package.
+	 ->it is the highest visible and least secured access specifier.
+
+	2)protected access specifier:
+	 ->protected members are accessable within the class, outside the class within the same package and we can access it outside the package after satisfying two conditions,
+	   -->it should be subclass outside the package and 
+	   -->we have to access it using subclass object.
+
+	3)default access specifier:
+	 ->Any member declered without access specifier will be considered as default access specifier.
+	 ->The default members are visible only within the package.
+
+	4)private access specifier:
+	 ->private members are accessable only within the class.    
+
+	    +-----------+-------------+----------------------+--------------------------------------------------+
+  	  | Access    | Within     | Outside Class and    | Outside Package                                   | 
+	    | Modifier  | Class      | within package       |                                                   |                
+	    +-----------+-------------+----------------------+--------------------------------------------------+
+	    | public    | Yes        | Yes                  | Yes                                               | 
+	    +-----------+-------------+----------------------+--------------------------------------------------+
+	    | protected | Yes        | Yes                  | Yes(is-a subclasses object)/otherwise not possible| 
+	    +-----------+-------------+----------------------+--------------------------------------------------+
+	    | default   | Yes        | Yes                  | No                                                | 
+	    +-----------+-------------+----------------------+--------------------------------------------------+
+	    | private   | Yes        | No                   | No                                                |
+	    +-----------+-------------+----------------------+--------------------------------------------------+
+
+	 
+  
+      +-------------+--------+-----------+---------+------------------------------+
+      | Access      | public | protected | default | private                      |
+      | Modifier    |        |           |         |                              |       
+      +-------------+--------+-----------+---------+------------------------------+
+      | class       | Yes    | No        | Yes     | Yes                          | 
+      +-------------+--------+-----------+---------+------------------------------+
+      | variable    | Yes    | Yes       | Yes     | Yes                          | 
+      +-------------+--------+-----------+---------+------------------------------+
+      | method      | Yes    | Yes       | Yes     | concrete class|abstract class|
+      |             |        |           |         |     Yes       |  No          |
+      +-------------+--------+-----------+---------+------------------------------+
+      | constructor | Yes    | Yes       | Yes     | Yes                          |
+      +-------------+--------+-----------+---------+------------------------------+
+
+
+
+  Note:
+    1)What is the access level of that default constructor written by compiler?
+       The java compiler will take access level of class and assign it to default constructor.
+
+    2)While overriding a method in java we can increase the visibility of the overriden method, but we cannot reduce the visibility.
+     visibility level:public<protectedz<default<private
+
+    3)Within a single source file we can have any number of classes, but there should be only one class  which is declerd as public class and the name of the source file should be same name as public class name.  
+
+   Encapsulation:
+    ->Binding the code and data as a single unit.
+
+   Java Definition:Declering the data members as private and accessing them through get() and set() method is called as Encapsulation. 
+
+   Design patterns
+    1)java bean design pattern
+
+
+
+    Steps:
+     1)Declare the data members private
+     2)Declare the public getter and setter method.
+
+     Any class following the above concept is called java bean class.
+     Java bean class is a good example for encapsulation.
+
+
+
+Library
+ Collection of inbuilt programs are called Library.
+
+ 1)Sacnner class
+  ->Scanner class is present in java.util package.
+  ->The scanner class helps us to take the values from the keyword at runtime.
+
+ Important methods in Scanner class
+  1)nextInt():int
+   take int values at run time and return it
+  2)nextDouble():double
+   take double values at run time and return it
+  3)nextLong():long
+   take long values at run time and return it
+  4)next():String
+   take String values from keyboard
+  5)nextLine():String
+   take String values from keyboard
+
+ Object class
+  ->Object class is a super most class in java hierarchy.
+  ->it is present in java.lang package.
+  ->it has 11 non static methods and 1 zero argument constructor
+   1)public String toString()
+   2)public int hashCode()
+   3)public boolean equals(Object ob)
+   4)protected Object clone()
+   5)protected void finalize()
+   6)public void wait()
+   7)public void wait(long ns)
+   8)public void wait(int a,long ns)
+   9)public void notify()
+   10)public void notifyAll()
+   11)public Class getClass() 
+
+
+   2)public int hashCode()
+   {
+   	return hashcode value;
+   }
+
+     1)hashCode value
+      ->The value given to an object by jvm at the time of object creation to uniquely identify the object.
+      ->The value is calculated based on address of the Object.
+
+     2)hashcode method
+      ->when a programmer calls hashcode method, the method will return the hashcode assigned to object by jvm.
+
+     1)public String toString()
+      {
+        return "fullyqualifiedclass @hexadecimal value of hashcode";
+      }  
+      it is known as String representation of class
+
+       Note:
+        ->In java it is impossible to know the address of the object. If print reference variable using System.out.println(); then we will not get address we will get toString() output.
+
+   
+
+   3)public boolean equals(Object ob)
+    syntax:
+     {
+      return hashcode of ob1==hashcode of ob2;
+     }
+
+     Note:
+      ->operator will compare address of the object to compare two different objects in java it is recommended to use .equals method.
+      ->.equals method will internally compare hashcodes of the objects and decide the answer.
+      ->hence it is recommended to override equals method to compare content of the object to decide duplicate. 
+
+     Example:
+     class Pro_duct
+{
+  int id;
+  String name;
+  double cost;
+  public Pro_duct(int id,String name,double cost)
+  {
+    this.id=id;
+    this.name=name;
+    this.cost=cost;
+  }
+  public boolean equals(Object ob)
+  {
+    Pro_duct pt=(Pro_duct)ob;
+    return this.id == pt.id;
+  }
+}
+public class Product 
+{
+  public static void main(String[] args) 
+  {
+    Pro_duct p1=new Pro_duct(123, "mobile",10000);
+    Pro_duct p2=new Pro_duct(123, "mobile", 10000);
+    
+    System.out.println(p1==p2);
+    boolean ans=p1.equals(p2);
+    System.out.println(ans);
+  }
+}
+
+   
+String class
+ Features of String
+  1)String is a inbuilt class provided by java to store collection of characters.
+  2)String class is present in java.lang 
+  3)String class is declared as final.
+  4)it is a immutable class.
+  5)String class implements comparable interface. Hence we can sort
+  6)String class is thread safe.
+  7)String class Object can be created in two ways:
+   ->using double quotes(" "),
+   ->new Operator.
+  8)In String class 3 constructor are there
+   ->zero arg
+   ->String arg
+   ->char[] arg
+  9)In String class 3 methods of Object class is Overridden,
+   ->toSting()==> to return the String data in holds
+   ->hashcode()==>return Unicode calculation
+   ->equals()==>  compares contents of the object.
+
+    Note:
+     ->In java never compare String Objects using (==)operator.     
+  10)Object of String class are stored in a special area of heap known as String pool area. This String pool area is divided into parts,
+   1)constant pool
+    ->The String Object created using only ""(double quotes) will be stored in constant pool.
+    ->Duplicate Objects not allowed in constant pool.
+   2)non constant pool
+    ->The String Object created using new operator will be stored in non constant pool.
+    ->Duplicate Objects allowed in non constant pool.
+
+  Important methods of String class
+   1)length():int
+    ->this method return total number of characters present in the String Object.
+   2)charAt(int index):char
+    ->This method returns a single character at the specified index.
+   3)toCharArray():char[]
+    ->Convert String to character array.
+   4)toLowerCase():String
+    ->This method will convert all the characters in the String to lower case.
+   5)toUpperase():String
+    ->This method will convert all the characters in the String to upper case.
+   6)indexOf(char ch):int
+    ->This method returns index of character present.
+   7)indexOf(char ch,int start):int
+    ->This method returns index of character present searching from the index specified.
+   8)subString(int start):String
+    ->This method extract all the characters from the index specified to last index in the form of String.
+   9)subString(int start,int end):String
+    ->This method extract all the characters from the index specified to end index in the form of String.
+   10)split(String s1):String[]
+    ->This method converts one sentence to Array of string.    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     Exception handling Exception Exception is an Object created by JVM when it encounters a risky line of code in the program which stops the normal flow of the program Note: 1)when Jvm encounters and risky line of code in the program then JVM will internally create Exception Object to inform the programmer about exception 2)this exception object created will be thrown to the Code by Jvm 3)if the Programmer has written any code to handle that exception then that exception will not go back to jvm allowing the JVM to continue the Execution of rest of the programs 4)if the programmer has not written any code to handle the exception then JVM will get back the exception then the JVm handles that exception by itself and stops the program Exception handling we can handle exception in 2 ways 1)try catch block 2)using throws keyword 1)try catch block syntax try { //normal or risky code } catch(Exceptionname ref) { //altrenative code } note: 1)if there is any risky code in the try blocks then Jvm handles exception in catch block and continue the normal flow of the program 2)if there is no exception inside try block then catch will not get executed 3)if the control of JVM goes to catch block from try block when in encounters a risky code jvm will execute the catch block and continue with remaning set of statements .it wont come back to try block to execute left out statements 2nd syntax try multiple catch syntax try { //normal or risky code } catch(Exceptionname ref) { //altrenative code } catch(Exceptionname ref) { //altrenative code } catch(Exceptionname ref) { //altrenative code } Note: 1)in one try block there can be multiple risky codes to handle them we need to use multiple catch blocks 2)catch(Exception ref) { System.out.println("Exception alternative...."); } it is a generic exception handler which can handle any type of exception. 3)catch(InputMismatchException ref) { System.out.println("InputMismatchException alternative...."); } it is a specific exception handler which can handle only one type of exception 3)Syntax of try catch block try { //set of statements } catch(Exception name) { //alternative } finally { //important code } Note: 1)finally block will be executed in every scenario scenario‐1 exception occurred and handled scenario‐2 exception not occurred scenario‐3 exception occurred and not handled 2)the important and mandatory lines of code has to be written inside finally block 3)there is only one scenario where we can stop the execution of finally block System.exit(0); 4)syntax try and finally try { //set of statements } finally { //important code } Propagation of Unchecked exception travelling of exception object from called method to calling method is known as propagation exception when an exception is created in any method and if we don’t handle that exception within that method then the Jvm will propagate the exception object to its caller to know the propagation details of exception object we can call an inbuilt method present in Exception object printstacktrace(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
